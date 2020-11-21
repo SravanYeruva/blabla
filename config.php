@@ -40,10 +40,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'pgsql';      // 'pgsql', 'mariadb', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = 'localhost';  // eg 'localhost' or 'db.isp.com' or IP
-$CFG->dbname    = 'moodle';     // database name, eg moodle
-$CFG->dbuser    = 'username';   // your database username
-$CFG->dbpass    = 'password';   // your database password
+$CFG->dbhost    = 'ec2-54-220-229-215.eu-west-1.compute.amazonaws.com';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->dbname    = 'd95dth790m1ut4';     // database name, eg moodle
+$CFG->dbuser    = 'eeldteyzvlegjc';   // your database username
+$CFG->dbpass    = 'cffaa415e5b60c54215f80cae9213330bbf0d8ab79739216cb29eed6ee0b1c03';   // your database password
 $CFG->prefix    = 'mdl_';       // prefix to use for all table names
 $CFG->dboptions = array(
     'dbpersist' => false,       // should persistent database connections be
@@ -56,7 +56,7 @@ $CFG->dboptions = array(
                                 //  (please note mysql is always using socket
                                 //  if dbhost is 'localhost' - if you need
                                 //  local port connection use '127.0.0.1')
-    'dbport'    => '',          // the TCP port number to use when connecting
+    'dbport'    => '5432',          // the TCP port number to use when connecting
                                 //  to the server. keep empty string for the
                                 //  default port
     'dbhandlesoptions' => false,// On PostgreSQL poolers like pgbouncer don't
@@ -93,7 +93,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://example.com/moodle';
+$CFG->wwwroot   = 'http://lmsdemos.herokuapp.com';
 
 
 //=========================================================================
@@ -109,7 +109,7 @@ $CFG->wwwroot   = 'http://example.com/moodle';
 //
 // - On Windows systems you might specify something like 'c:\moodledata'
 
-$CFG->dataroot  = '/home/example/moodledata';
+$CFG->dataroot  = '/app/moodledata';
 
 
 //=========================================================================
