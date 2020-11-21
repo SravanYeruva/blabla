@@ -109,7 +109,7 @@ $CFG->wwwroot   = 'http://lmsdemos.herokuapp.com';
 //
 // - On Windows systems you might specify something like 'c:\moodledata'
 
-$CFG->dataroot  = '/app/moodledata';
+$CFG->dataroot  = '/tmp';
 
 
 //=========================================================================
